@@ -1,0 +1,138 @@
+header {
+  margin: 5em 0em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header #foto {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  margin-right: 2em;
+}
+
+header #foto img {
+  width: 15em;
+  border-radius: 5em;
+  -webkit-box-shadow: 8px 8px 8px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 8px 8px 8px -4px rgba(0, 0, 0, 0.75);
+}
+
+nav {
+  margin-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 2em;
+  background-color: #000;
+}
+
+nav a {
+  margin: 0em 1em;
+  text-decoration: none;
+  color: #fff;
+}
+
+main #estudios {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 60% 20%;
+      grid-template-columns: 20% 60% 20%;
+}
+
+main #estudios .estudios-header {
+  grid-column: 3 span;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #estudios .estudios-header i {
+  font-size: 1.7em;
+  margin: 0 1.5rem 0 1rem;
+}
+
+main #estudios .estudios-content {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+main #estudios .estudios-content .estudio {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 20% 60%;
+      grid-template-columns: 20% 20% 60%;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #estudios .estudios-content .estudio h3 {
+  font-size: 1.5rem;
+}
+
+main #estudios .estudios-content .estudio .descripcion {
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+main #trabajos .trabajos-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #trabajos .trabajos-header i {
+  font-size: 1.7em;
+  margin: 0 1.5rem 0 1rem;
+}
+
+main #skills .skills-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #skills .skills-header i {
+  font-size: 1.7em;
+  margin: 0 1.5rem 0 1rem;
+}
+
+footer #icons .social {
+  font-size: 2em;
+  margin: 1em;
+}
+
+footer #icons #telegram {
+  font-size: 1.8em;
+  background-color: #000;
+  color: #fff;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 0.1em;
+}
+/*# sourceMappingURL=main.css.map */

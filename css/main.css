@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+
+header{
+    margin: 5em 0em ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+#foto{
+    justify-self: end;
+    margin-right: 2em;
+    
+}
+
+
+
+#foto > img{
+    width: 15em; 
+    border-radius: 5em;
+    -webkit-box-shadow: 8px 8px 8px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 8px 8px 8px -4px rgba(0,0,0,0.75);
+    box-shadow: 8px 8px 8px -4px rgba(0,0,0,0.75);
+}
+
+
+
+
+
+
+nav{
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2em;
+    background-color: #000;
+}
+
+nav>a{
+    margin: 0em 1em;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
+#estudios{
+    margin: 1em 0;
+}
+
+.estudios-header{
+    display: flex;
+    font-size: 2em;
+    align-items: center;
+    margin: 1em 0;
+}
+
+.estudio{
+    min-height: 100px;
+    display: grid;
+    gap: 1em;
+    grid: 100% / 0.5fr 0.5fr 0.5fr 1.5fr 0.5fr;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.estudio > h2{
+    grid-column: 2/3;
+    justify-self: center;
+}
+.estudio > img{
+    justify-self: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.social{
+    font-size: 2em;
+    margin: 1em;
+}
+
+#telegram{
+    font-size: 1.8em;
+    background-color: #000;
+    color: #fff;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 0.1em;
+}

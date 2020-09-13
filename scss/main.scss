@@ -1,0 +1,92 @@
+@import "components/const";
+@import "components/mixings";
+
+
+
+header{
+    margin: 5em 0em ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    #foto{
+        justify-self: end;
+        margin-right: 2em;
+        img{
+            width: 15em; 
+            border-radius: 5em;
+            @include sombreado;
+        }
+    }
+}
+
+nav{
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2em;
+    background-color: map-get($colores, black);
+    a{
+        margin: 0em 1em;
+        text-decoration: none;
+        color: map-get($colores, white);
+    }
+}
+
+
+main{
+    #estudios{
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+        .estudios-header{
+            grid-column:  3 span;
+            @include encabezados;
+        }
+        .estudios-content{
+            grid-column: 2/3;
+            .estudio{
+                display: grid;
+                grid-template-columns: 20% 20% 60%;
+                justify-items: center;
+                align-items: center;
+                h3{ font-size: 1.5rem;}
+                .descripcion{
+                    justify-self: start;
+                }
+            }            
+        }
+    }
+
+    #trabajos{
+        .trabajos-header{
+            @include encabezados;
+        }
+    }
+
+    #skills{
+        .skills-header{
+            @include encabezados;
+        }
+    }
+}
+
+
+footer{
+    #icons{
+        .social{
+            font-size: 2em;
+            margin: 1em;
+        }
+        #telegram{
+            font-size: 1.8em;
+            background-color: map-get($colores,black);
+            color: map-get($colores, white);
+            padding-left: 5px;
+            padding-right: 5px;
+            border-radius: 0.1em;
+        }
+    }
+}
+
+
+

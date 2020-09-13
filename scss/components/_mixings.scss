@@ -1,0 +1,15 @@
+@mixin sombreado {
+    -webkit-box-shadow: 8px 8px 8px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 8px 8px 8px -4px rgba(0,0,0,0.75);
+    box-shadow: 8px 8px 8px -4px rgba(0,0,0,0.75);
+}
+
+@mixin encabezados {
+    display: flex;
+    font-size: 2em;
+    align-items: center;
+    i{
+        font-size: 1.7em;
+        margin: 0 1.5rem 0 1rem;
+    }
+}
