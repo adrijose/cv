@@ -55,14 +55,14 @@ main #estudios .estudios-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 2em;
+  font-size: 1.5em;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 main #estudios .estudios-header i {
-  font-size: 1.7em;
+  font-size: 2em;
   margin: 0 1.5rem 0 1rem;
 }
 
@@ -83,27 +83,88 @@ main #estudios .estudios-content .estudio {
           align-items: center;
 }
 
-main #estudios .estudios-content .estudio h3 {
-  font-size: 1.5rem;
-}
-
 main #estudios .estudios-content .estudio .descripcion {
   -ms-grid-column-align: start;
       justify-self: start;
+}
+
+main #estudios .estudios-content .estudio .descripcion h3 {
+  font-size: 1.5rem;
+}
+
+main #estudios .estudios-content .separator {
+  width: 100%;
+  height: 2px;
+  background-color: lightgrey;
+}
+
+@media screen and (max-width: 992px) {
+  main #estudios {
+    -ms-grid-columns: 2fr;
+        grid-template-columns: 2fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main #estudios {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  main #estudios .estudios-content {
+    grid-column: 1/-1;
+  }
+  main #estudios .estudios-content .estudio {
+    -ms-grid-columns: 25% 75%;
+        grid-template-columns: 25% 75%;
+        grid-template-areas: "fecha info" "logo info";
+  }
+  main #estudios .estudios-content .estudio h2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: fecha;
+  }
+  main #estudios .estudios-content .estudio img {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: logo;
+  }
+  main #estudios .estudios-content .estudio .descripcion {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    grid-area: info;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main #estudios .estudios-content .estudio {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "fecha logo" "info info";
+  }
+  main #estudios .estudios-content .estudio h2 {
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+  main #estudios .estudios-content .estudio .descripcion {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    text-align: center;
+  }
 }
 
 main #trabajos .trabajos-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 2em;
+  font-size: 1.5em;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 main #trabajos .trabajos-header i {
-  font-size: 1.7em;
+  font-size: 2em;
   margin: 0 1.5rem 0 1rem;
 }
 
@@ -111,28 +172,46 @@ main #skills .skills-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 2em;
+  font-size: 1.5em;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 main #skills .skills-header i {
-  font-size: 1.7em;
+  font-size: 2em;
   margin: 0 1.5rem 0 1rem;
+}
+
+footer {
+  background-color: black;
 }
 
 footer #icons .social {
   font-size: 2em;
   margin: 1em;
+  color: #fff;
 }
 
 footer #icons #telegram {
   font-size: 1.8em;
-  background-color: #000;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
   padding-left: 5px;
   padding-right: 5px;
   border-radius: 0.1em;
+}
+
+.correcto, .error {
+  width: 200px;
+  height: 200px;
+}
+
+.correcto {
+  background-color: green;
+}
+
+.error {
+  background-color: red;
 }
 /*# sourceMappingURL=main.css.map */
